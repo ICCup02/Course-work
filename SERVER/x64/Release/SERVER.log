@@ -1,0 +1,9 @@
+﻿  SERVER.cpp
+F:\git\Programm\SERVER\include\CServer.cpp(93,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+F:\git\Programm\SERVER\include\CServer.cpp(138,1): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+F:\git\Programm\SERVER\include\CServer.cpp(143,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 206 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  SERVER.vcxproj -> F:\git\Programm\SERVER\x64\Release\SERVER.exe
