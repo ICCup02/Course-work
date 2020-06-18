@@ -1,0 +1,83 @@
+﻿  test2.cpp
+F:\git\Programm\Game\include\level.h(57,18): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+F:\git\Programm\Game\include\level.h(141,27): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+F:\git\Programm\Game\include\level.h(142,33): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+F:\git\Programm\Game\include\level.h(182,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\git\Programm\Game\include\level.h(182,38): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\git\Programm\Game\include\level.h(239,39): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\git\Programm\Game\include\level.h(239,36): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\git\Programm\Game\include\level.h(260,34): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+F:\git\Programm\Game\include\level.h(261,35): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+F:\git\Programm\Game\include\level.h(262,37): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+F:\git\Programm\Game\include\level.h(263,36): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+F:\git\Programm\Game\include\level.h(306,23): warning C4018: <: несоответствие типов со знаком и без знака
+F:\git\Programm\Game\include\level.h(315,23): warning C4018: <: несоответствие типов со знаком и без знака
+F:\git\Programm\Game\include\level.h(337,31): warning C4018: <: несоответствие типов со знаком и без знака
+F:\git\Programm\Game\include\level.h(338,33): warning C4018: <: несоответствие типов со знаком и без знака
+F:\git\Programm\Game\include\CClient.cpp(138,18): warning C4018: >: несоответствие типов со знаком и без знака
+F:\git\Programm\Game\include\CAllObjectUnion.cpp(12,1): warning C4305: =: усечение из "double" в "float"
+F:\git\Programm\Game\include\CAllObjectUnion.cpp(16,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\git\Programm\Game\include\CAllObjectUnion.cpp(16,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\git\Programm\Game\include\CAllObjectUnion.cpp(19,33): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+F:\git\Programm\Game\include\CAllObjectUnion.cpp(19,26): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+F:\git\Programm\Game\include\CAllObjectUnion.cpp(24,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+F:\git\Programm\Game\include\CPlayer.cpp(76,35): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\git\Programm\Game\include\CPlayer.cpp(77,26): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\git\Programm\Game\include\CPlayer.cpp(87,35): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\git\Programm\Game\include\CPlayer.cpp(88,26): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\git\Programm\Game\include\CPlayer.cpp(109,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\git\Programm\Game\include\CPlayer.cpp(124,21): warning C4018: <: несоответствие типов со знаком и без знака
+F:\git\Programm\Game\include\CPlayer.cpp(167,1): warning C4305: =: усечение из "double" в "float"
+F:\git\Programm\Game\include\CPlayer.cpp(172,1): warning C4305: =: усечение из "double" в "float"
+F:\git\Programm\Game\include\CPlayer.cpp(177,1): warning C4305: =: усечение из "double" в "float"
+F:\git\Programm\Game\include\PlayerForClient.cpp(58,25): warning C4566: символ, представленный универсальным именем символа "\u221E", невозможно представить в текущей кодовой странице (1251)
+F:\git\Programm\Game\include\PlayerForClient.cpp(118,25): warning C4566: символ, представленный универсальным именем символа "\u221E", невозможно представить в текущей кодовой странице (1251)
+F:\git\Programm\Game\include\PlayerForClient.cpp(32,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\git\Programm\Game\include\PlayerForClient.cpp(32,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\git\Programm\Game\include\PlayerForClient.cpp(105,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+F:\git\Programm\Game\include\CBullet.cpp(6,1): warning C4305: =: усечение из "double" в "float"
+F:\git\Programm\Game\include\CBullet.cpp(35,33): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+F:\git\Programm\Game\include\CBullet.cpp(35,26): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+F:\git\Programm\Game\test2.cpp(66,21): warning C4305: инициализация: усечение из "double" в "float"
+F:\git\Programm\Game\test2.cpp(140,15): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+F:\git\Programm\Game\test2.cpp(152,23): warning C4305: =: усечение из "double" в "float"
+  tinystr.cpp
+  tinyxml.cpp
+  tinyxmlerror.cpp
+  tinyxmlparser.cpp
+  Создание кода...
+F:\git\Programm\Game\include\level.h(309): warning C4715: Level::GetObjectLevel: значение возвращается не при всех путях выполнения
+F:\git\Programm\Game\test2.cpp(44): warning C4715: Winner: значение возвращается не при всех путях выполнения
+  test2.vcxproj -> F:\git\Programm\Game\Debug\test2.exe
