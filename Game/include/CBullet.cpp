@@ -17,7 +17,7 @@ public:
 		{
 
 		case 0: Dx = Speed; Dy = 0; //интовое значение state = right  
-			sprite.setPosition(x, y);//72 32
+			sprite.setPosition(x, y);
 			break;
 		case 1: Dx = -Speed; Dy = 0; //интовое значение state = left
 			sprite.setPosition(x, y);

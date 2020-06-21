@@ -55,7 +55,6 @@ public:
 
 		int initResult = 0;
 		this->ServerConfig = ServerConfig;
-		//std::cout<< this->ServerConfig.MaxPlayer;
 		addrinfo  ServerAddrh;
 
 		ZeroMemory(&ServerAddrh, sizeof(ServerAddrh));
@@ -127,10 +126,7 @@ public:
 
 				int byteslenrecv;
 				std::this_thread::sleep_for(std::chrono::microseconds(75));
-				byteslenrecv = recv(this->Clients[i].ClientSocket, 
-					this->Clients[i].Buffer, 
-					sizeof(this->Clients[i].Buffer), 
-					NULL);
+				byteslenrecv = recv(this->Clients[i].ClientSocket, this->Clients[i].Buffer, sizeof(this->Clients[i].Buffer), NULL);
 
 				if ((byteslenrecv == SOCKET_ERROR) || (byteslenrecv == 0)) {
 					closesocket(this->Clients[i].ClientSocket);
@@ -143,8 +139,7 @@ public:
 						this->Clients[i].DataClients = temp.substr(0, byteslenrecv);
 
 						FillDataClients(i, this->ServerConfig.MaxPlayer);						
-						send(this->Clients[i].ClientSocket, this->Clients[i].AllDataClients.c_str(), 
-							this->Clients[i].AllDataClients.length(), NULL);
+						send(this->Clients[i].ClientSocket, this->Clients[i].AllDataClients.c_str(), this->Clients[i].AllDataClients.length(), NULL);
 
 					}
 					else send(this->Clients[i].ClientSocket, "Fail", 4, NULL);

@@ -107,20 +107,14 @@ public:
 		return Current_Frame;
 	};
 	void SetPlayerGrafic(float XMainPlayer, float YMainPlayer) {
-		/*XfordrawIcon = XMainPlayer;
-		YfordrawIcon = YMainPlayer;*/
-		sprite.setPosition(x + Width / 2, y + Height / 2);
-		
+
+		sprite.setPosition(x + Width / 2, y + Height / 2);		
 		if (Health <= 0)HealthForIcon.setString("D");
 		else HealthForIcon.setString(std::to_string(Health));
-		//if (Clip == 0) { ClipForIcon.setString("RG"); }
-		//else ClipForIcon.setString(std::to_string(Clip));
 		ClipForIcon.setString("∞");
 		arrow.setPosition(x, 0); 
-		NickName1.setPosition(x - 2 * Name.getSize(), y - 25);//задаем позицию текста, отступая от центра камеры
+		NickName1.setPosition(x - 2 * Name.getSize(), y - 25);
 		setPlayerCoordinateForViewAndIcon(XMainPlayer, YMainPlayer, Icon, HealthForIcon, ClipForIcon, NickName2, 1);
-		//if (Health <= 0) { setPlayerCoordinateForView(x, y); }//если жизней меньше либо равно 0, то умираем
-	
 	
 	}
 };

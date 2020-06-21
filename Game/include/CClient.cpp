@@ -94,7 +94,9 @@ public:
 		return EXIT_SUCCESS;
 
 	};
-	void FillJson(float x, float y, int dir, int charcl, int lives,bool IsAshoot) {
+
+	
+	void FillJson(float x, float y, int dir, int charcl, int lives, bool IsAshoot) {
 		this->ConfigGame["XP"] = x;
 		this->ConfigGame["YP"] = y;
 		this->ConfigGame["Dir"] = dir;
@@ -102,7 +104,6 @@ public:
 		this->ConfigGame["Health"] = lives;
 		this->ConfigGame["Shoot"] = IsAshoot;
 	}
-
 	void StartClient() {
 		while (this->Triggers.TrigerHandle) {
 			SendtoServer();
@@ -112,7 +113,7 @@ public:
 	}
 	void SendtoServer() {
 		int initResult = 0;
-		initResult = send(this->ConnectSocket, (this->ConfigGame.dump().c_str()), this->ConfigGame.dump().length(), 0);
+		initResult = send(this->ConnectSocket, (this->ConfigGame.dump().c_str()),this->ConfigGame.dump().length(), 0);
 		if (initResult == SOCKET_ERROR) {
 			cout << "send failed: " << WSAGetLastError() << "\n";
 			CounterForReconnect++;
@@ -124,22 +125,19 @@ public:
 		else CounterForReconnect = 0;
 	}
 	void RecvData() {
-		int readBytes = 0;
- 
+		int readBytes = 0; 
 		readBytes = recv(this->ConnectSocket, this->Buffer, sizeof(this->Buffer), NULL);
 		if ((readBytes == SOCKET_ERROR) || (readBytes == 0)) {
 			cout << "recv Error or connect closed: " << WSAGetLastError() << "\n";
 		}
-		else {
-			
+		else {			
 			this->AllDataClients = this->Buffer;
 			if (readBytes > this->AllDataClients.length())readBytes = this->AllDataClients.length();
 			if (((this->AllDataClients[0] == '{')) && (this->AllDataClients[readBytes-1] == '}')) {
 				this->AllDataClients = this->AllDataClients.substr(0, readBytes);
 			}
 			else this->AllDataClients = "Fail";
-		}
-	
+		}	
 	};
 	std::string GetAllDataClients() {
 		return AllDataClients;
