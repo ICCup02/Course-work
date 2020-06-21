@@ -47,7 +47,6 @@ public:
 	}
 	void update(float time)
 	{
-		//	std::cout <<"AFTeR:    " << getplayercoordinateY() << "\n";
 		move(time);
 		switch (CharacterPersonage)
 		{
@@ -81,7 +80,7 @@ public:
 				sprite.setTextureRect(sf::IntRect(26 + 100 * int(frame_change(time, Frame, 0.005)), 494, 70, 64));
 			}
 			if (Direction == LEFT) {
-				Width = -16; //if (OnGround==true)Dy = 0;
+				Width = -16; 
 				sprite.setTextureRect(sf::IntRect(2 + 100 * int(frame_change(time, Frame, 0.005)), 398, 70, 64));
 			}
 			if (Speed > 0)Dx = Speed - 0.2 + BulletHit;
@@ -90,11 +89,8 @@ public:
 		}
 		if (BulletHit > 0)BulletHit -= 0.5;
 		if (BulletHit < 0)BulletHit += 0.5;
-		//std::cout << "time:" << time << "\n";
-		//std::cout << "time    :" << time << '\n';
 		x += Dx * time;
 		y += Dy * time;
-		//std::cout << "BEFORE:    "  << getplayercoordinateY() << "\n";
 		check_Collision_With_Map(Dy);
 		sprite.setPosition(x + Width / 2, y + Height / 2);
 		arrow.setPosition(x, 0);
@@ -107,8 +103,6 @@ public:
 
 		setPlayerCoordinateForViewAndIcon(x, y, Icon, HealthForIcon, ClipForIcon, NickName2, 0);
 		if (!OnGround) { Dy = Dy + 0.001 * time; }
-
-		//if (Health <= 0) { setPlayerCoordinateForView(x, y); }//если жизней меньше либо равно 0, то умираем
 
 	}
 	float getplayercoordinateX() {
@@ -125,27 +119,15 @@ public:
 			if (getRect().intersects(obj[i].rect))//проверяем пересечение игрока с объектом
 			{
 
-				//std::cout << "SSS\nx:" << x << "\ny:" << y << obj[i].name << "\n";
 				if (obj[i].name == "Solid")
 				{
-					//если встретили препятствие
-					//std::cout << "\nx:" << x << "\ny+h:" << (static_cast<int>(y)) + Height << "obj:" << obj[i].rect.top << "\n";
-					//std::cout << "\nx:" << x << "\ny:" << y << obj[i].rect.top << "\n";
-					//if ((y + Height - obj[i].rect.top < 10)  && (dy > 0)) { y = obj[i].rect.top - Height;  Dy = 0; OnGround = true; }
-					//else if((CharacterPersonage == DOWN) && (int(y) != 864)) { y += 32; CharacterPersonage = JUMP; }
-					//if ((y + Height - obj[i].rect.top > 10) && (y + Height - obj[i].rect.top < 32)  && (dy > 0)) { y = obj[i].rect.top - Height;  Dy = 0; OnGround = true; }
-					//else if ((CharacterPersonage == DOWN) && (int(y) != 864)) { y += 32; CharacterPersonage = JUMP; }*/
-					if (Falling > 0) { Falling--; OnGround = false; y += 2; }//0.6 sec
+
+					if (Falling > 0) { Falling--; OnGround = false; y += 2; }
 					else if ((y + Height - obj[i].rect.top < 20) && (dy > 0)) {
 						y = obj[i].rect.top - Height;  Dy = 0; OnGround = true;
 
 					}
-					//	else
-					//		//if (y + Height - obj[i].rect.top < 10) {
 
-					//else if ((CharacterPersonage != DOWN) && (dy > 0)) { y = obj[i].rect.top - Height;  Dy = 0; OnGround = true; }
-					//else if ((CharacterPersonage == DOWN) && (y < obj[i].rect.top - Height)) { CharacterPersonage = JUMP; }
-					//
 				}
 				else if (obj[i].name == "Dead") {
 

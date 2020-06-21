@@ -246,7 +246,6 @@ int main(int argc, char* argv[])
 				if (b->IsAlife == false) { itforBullet = AllObject.erase(itforBullet); delete b; }// если этот объект мертв, то удаляем его
 				else itforBullet++;//и идем курсором (итератором) к след объекту. так делаем со всеми объектами списка
 			}
-			//PlayerNumber1.update(time);
 			window.setView(view);
 			window.clear(Color(255, 255, 255));
 			lvl.Draw(window);

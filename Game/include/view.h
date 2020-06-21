@@ -8,8 +8,6 @@ void setPlayerCoordinateForViewAndIcon(float& x, float& y, Sprite& Icon, Text& h
 	float tempXForView = x; float tempYForView = y;//считываем коорд игрока и проверяем их, чтобы убрать края
 	if (x < 800) tempXForView = 800;//убираем из вида левую сторону
 	if (y < 400) tempYForView = 400;//верхнюю сторону
-	//if (x < 320) tempX = 320;
-	//if (y < 240) tempY = 240;//верхнюю сторону
 	if (y > 680) tempYForView = 680;//нижнюю стороню.для новой карты
 	if (x > 1120) tempXForView = 1120;
 	if (factor == 0)view.setCenter(tempXForView, tempYForView);
