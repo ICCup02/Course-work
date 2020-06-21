@@ -52,7 +52,8 @@ nlohmann::json GameConfig = {
 };
 int main(int argc, char* argv[])
 {
-	setlocale(LC_ALL,"RUS");
+	setlocale(LC_ALL,
+		"RUS");
 	std::string NickName = "";
 	
 	while ((NickName.length() > 7)||(NickName.length()==0)) {
@@ -123,7 +124,6 @@ int main(int argc, char* argv[])
 		players.push_back(new PlayerForClient(HeroImage, ("Player" + std::to_string(i + 2)), lvl, player.rect.left, player.rect.top, 42, 64, text));
 
 	Clock clockForGame, clockForRecharge;
-	//time clockForRecharge = std::chrono::milliseconds();
 
 	std::thread StartCl = std::thread(&CClient::StartClient, &Client);
 	StartCl.detach();
@@ -132,10 +132,6 @@ int main(int argc, char* argv[])
 	while (window.isOpen()) {
 		Event event;
 		if (Winner(ConfigC.Maxplayer, MainPlayer.Health, health) == 10) {
-
-			
-			
-			//Client.SendtoServer();
 
 			float time = clockForGame.getElapsedTime().asMicroseconds();
 			float ShootTime = clockForRecharge.getElapsedTime().asSeconds();
@@ -166,25 +162,21 @@ int main(int argc, char* argv[])
 			{
 				if (event.type == sf::Event::Closed)
 					window.close();
-			}	
-				
+			}				
 
 			for (itforPlayers = players.begin(), counter = 0; itforPlayers != players.end(); counter++, itforPlayers++) {
-				//cout << "RECV: " << Client.GetAllDataClients() << "d\n";
 
 				if ((Client.GetAllDataClients() != "Fail") && (Client.GetAllDataClients() != ""))
 				{
 
 					try {
-						//cout << "me recvbeg :" << Client.GetAllDataClients() << "recvend\n";
 						GameConfig = nlohmann::json::parse(Client.GetAllDataClients());
 
-					}//cout << "it's x: "<<x<<'\n';
+					}
 					catch (nlohmann::detail::type_error ex) {
 						try {
 							GameConfig = nlohmann::json::parse(Client.GetAllDataClients());
 						}
-						//cout << "me recvbeg :" << Client.GetAllDataClients() << "recvend\n";
 						catch (nlohmann::detail::type_error ex) {
 							cout << ex.what();
 							cout << "RECV: " << Client.GetAllDataClients() << "d\n";
@@ -195,14 +187,12 @@ int main(int argc, char* argv[])
 						try {
 							GameConfig = nlohmann::json::parse(Client.GetAllDataClients());
 						}
-						//cout << "me recvbeg :" << Client.GetAllDataClients() << "recvend\n";
 						catch (nlohmann::detail::exception ex) {
 							cout << ex.what();
 							cout << "RECV: " << Client.GetAllDataClients() << "d\n";
 						}
 						
 					}
-					//	cout << Client.GetAllDataClients(counter) << "\n";
 
 					xClietns = GameConfig["XP"].get<float>();
 					yClietns = GameConfig["YP"].get<float>();
@@ -261,9 +251,8 @@ int main(int argc, char* argv[])
 			window.clear(Color(255, 255, 255));
 			lvl.Draw(window);
 
-
 			window.draw(MainPlayer.sprite);
-			window.draw(MainPlayer.NickName1);//рисую этот текст
+			window.draw(MainPlayer.NickName1);//рисую текст
 			window.draw(MainPlayer.Icon);
 			window.draw(MainPlayer.ClipForIcon);
 			window.draw(MainPlayer.HealthForIcon);
@@ -272,7 +261,7 @@ int main(int argc, char* argv[])
 
 			for (itforPlayers = players.begin(); itforPlayers != players.end(); itforPlayers++) {
 				(*itforPlayers)->SetPlayerGrafic(MainPlayer.getplayercoordinateX(), MainPlayer.getplayercoordinateY());
-				window.draw((*itforPlayers)->NickName1);//рисую этот текст
+				window.draw((*itforPlayers)->NickName1);//рисую текст
 				window.draw((*itforPlayers)->Icon);
 				window.draw((*itforPlayers)->ClipForIcon);
 				window.draw((*itforPlayers)->HealthForIcon);
@@ -286,7 +275,6 @@ int main(int argc, char* argv[])
 			window.display();
 		}
 		else {
-
 
 			while (window.pollEvent(event))
 			{

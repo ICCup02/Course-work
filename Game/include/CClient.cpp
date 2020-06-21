@@ -112,7 +112,6 @@ public:
 	}
 	void SendtoServer() {
 		int initResult = 0;
-		//this->ConfigGame.dump().length() (nlohmann::to_string(this->ConfigGame)).length()
 		initResult = send(this->ConnectSocket, (this->ConfigGame.dump().c_str()), this->ConfigGame.dump().length(), 0);
 		if (initResult == SOCKET_ERROR) {
 			cout << "send failed: " << WSAGetLastError() << "\n";
@@ -122,13 +121,12 @@ public:
 			else StopConnect();
 			WSACleanup();
 		}
-		else CounterForReconnect = 0; //cout << "SEND: "<< this->ConfigGame.dump().c_str() << "\n";
+		else CounterForReconnect = 0;
 	}
 	void RecvData() {
 		int readBytes = 0;
  
 		readBytes = recv(this->ConnectSocket, this->Buffer, sizeof(this->Buffer), NULL);
-		//cout << "ReadBytes" << readBytes << "\n";
 		if ((readBytes == SOCKET_ERROR) || (readBytes == 0)) {
 			cout << "recv Error or connect closed: " << WSAGetLastError() << "\n";
 		}

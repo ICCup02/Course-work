@@ -70,17 +70,12 @@ F:\git\Programm\Game\include\CBullet.cpp(35,26): warning C4244: аргумент
           [
               T=float
           ]
-F:\git\Programm\Game\test2.cpp(66,21): warning C4305: инициализация: усечение из "double" в "float"
-F:\git\Programm\Game\test2.cpp(140,15): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
-F:\git\Programm\Game\test2.cpp(152,23): warning C4305: =: усечение из "double" в "float"
-  tinystr.cpp
-  tinyxml.cpp
-  tinyxmlerror.cpp
-  tinyxmlparser.cpp
+F:\git\Programm\Game\test2.cpp(67,21): warning C4305: инициализация: усечение из "double" в "float"
+F:\git\Programm\Game\test2.cpp(136,15): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+F:\git\Programm\Game\test2.cpp(148,23): warning C4305: =: усечение из "double" в "float"
   Создание кода
-  Previous IPDB not found, fall back to full compilation.
-F:\git\Programm\Game\test2.cpp(44): warning C4715: Winner: значение возвращается не при всех путях выполнения
-F:\git\Programm\Game\include\level.h(309): warning C4715: Level::GetObjectLevel: значение возвращается не при всех путях выполнения
-  All 2152 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  1 of 2152 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    4 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   test2.vcxproj -> F:\git\Programm\Game\Release\test2.exe
