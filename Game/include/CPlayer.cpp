@@ -14,9 +14,10 @@ public:
 	Texture textureArrow;
 	float TimeRecharge, BulletHit, Falling;
 	Sprite arrow, Icon;
-	int  Health, Clip, Frame;//PlayerScore; если захочу реализовать смену ружья (не захочу так как не умею рисовать)
+	int  Health, Clip, Frame;//PlayerScore; если захочу реализовать смену ружья
 
-	Player(Image& image, String name, Level lvl, float X, float Y, int W, int H, Text playertext) :UnionAllObject(image, name, X, Y, W, H) {
+	Player(Image& image, String name, Level lvl, float X, float Y, int W, int H, Text playertext) 
+	:UnionAllObject(image, name, X, Y, W, H) {
 		//МАКСИМАЛЬНЫЙ НИК 8 СИМВОЛОВ
 		Health = 10;
 		IsAshoot = false;
