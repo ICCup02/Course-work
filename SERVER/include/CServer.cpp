@@ -125,7 +125,7 @@ public:
 			for (int i = 0; i < this->ServerConfig.MaxPlayer; i++) {
 
 				int byteslenrecv;
-				std::this_thread::sleep_for(std::chrono::microseconds(75));
+				std::this_thread::sleep_for(std::chrono::microseconds(150));
 				byteslenrecv = recv(this->Clients[i].ClientSocket, this->Clients[i].Buffer, sizeof(this->Clients[i].Buffer), NULL);
 
 				if ((byteslenrecv == SOCKET_ERROR) || (byteslenrecv == 0)) {

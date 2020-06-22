@@ -1,81 +1,79 @@
 ﻿  test2.cpp
-F:\git\Programm\Game\include\level.h(57,18): warning C4244: return: преобразование "double" в "float", возможна потеря данных
-F:\git\Programm\Game\include\level.h(141,27): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-F:\git\Programm\Game\include\level.h(142,33): warning C4244: =: преобразование "float" в "int", возможна потеря данных
-F:\git\Programm\Game\include\level.h(182,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-F:\git\Programm\Game\include\level.h(182,38): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-F:\git\Programm\Game\include\level.h(239,39): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-F:\git\Programm\Game\include\level.h(239,36): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-F:\git\Programm\Game\include\level.h(260,34): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+F:\Study\test2\test2\include\level.h(60,15): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+F:\Study\test2\test2\include\level.h(144,18): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+F:\Study\test2\test2\include\level.h(145,24): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+F:\Study\test2\test2\include\level.h(185,41): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\Study\test2\test2\include\level.h(185,26): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\Study\test2\test2\include\level.h(242,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\Study\test2\test2\include\level.h(242,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\Study\test2\test2\include\level.h(263,22): warning C4244: =: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-F:\git\Programm\Game\include\level.h(261,35): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+F:\Study\test2\test2\include\level.h(264,23): warning C4244: =: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-F:\git\Programm\Game\include\level.h(262,37): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+F:\Study\test2\test2\include\level.h(265,25): warning C4244: =: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-F:\git\Programm\Game\include\level.h(263,36): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+F:\Study\test2\test2\include\level.h(266,24): warning C4244: =: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-F:\git\Programm\Game\include\level.h(306,23): warning C4018: <: несоответствие типов со знаком и без знака
-F:\git\Programm\Game\include\level.h(315,23): warning C4018: <: несоответствие типов со знаком и без знака
-F:\git\Programm\Game\include\level.h(337,31): warning C4018: <: несоответствие типов со знаком и без знака
-F:\git\Programm\Game\include\level.h(338,33): warning C4018: <: несоответствие типов со знаком и без знака
-F:\git\Programm\Game\include\CClient.cpp(135,18): warning C4018: >: несоответствие типов со знаком и без знака
-F:\git\Programm\Game\include\CAllObjectUnion.cpp(12,1): warning C4305: =: усечение из "double" в "float"
-F:\git\Programm\Game\include\CAllObjectUnion.cpp(16,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-F:\git\Programm\Game\include\CAllObjectUnion.cpp(16,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-F:\git\Programm\Game\include\CAllObjectUnion.cpp(19,33): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+F:\Study\test2\test2\include\level.h(309,20): warning C4018: <: несоответствие типов со знаком и без знака
+F:\Study\test2\test2\include\level.h(318,20): warning C4018: <: несоответствие типов со знаком и без знака
+F:\Study\test2\test2\include\level.h(340,28): warning C4018: <: несоответствие типов со знаком и без знака
+F:\Study\test2\test2\include\level.h(341,27): warning C4018: <: несоответствие типов со знаком и без знака
+F:\Study\test2\test2\test2.cpp(17,42): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+F:\Study\test2\test2\test2.cpp(35,1): warning C4305: =: усечение из "double" в "float"
+F:\Study\test2\test2\test2.cpp(39,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\Study\test2\test2\test2.cpp(39,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\Study\test2\test2\test2.cpp(42,33): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-F:\git\Programm\Game\include\CAllObjectUnion.cpp(19,26): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+F:\Study\test2\test2\test2.cpp(42,26): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-F:\git\Programm\Game\include\CAllObjectUnion.cpp(24,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-F:\git\Programm\Game\include\CPlayer.cpp(75,35): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-F:\git\Programm\Game\include\CPlayer.cpp(76,26): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-F:\git\Programm\Game\include\CPlayer.cpp(86,35): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-F:\git\Programm\Game\include\CPlayer.cpp(87,26): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-F:\git\Programm\Game\include\CPlayer.cpp(105,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-F:\git\Programm\Game\include\CPlayer.cpp(118,21): warning C4018: <: несоответствие типов со знаком и без знака
-F:\git\Programm\Game\include\CPlayer.cpp(149,1): warning C4305: =: усечение из "double" в "float"
-F:\git\Programm\Game\include\CPlayer.cpp(154,1): warning C4305: =: усечение из "double" в "float"
-F:\git\Programm\Game\include\CPlayer.cpp(159,1): warning C4305: =: усечение из "double" в "float"
-F:\git\Programm\Game\include\PlayerForClient.cpp(58,25): warning C4566: символ, представленный универсальным именем символа "\u221E", невозможно представить в текущей кодовой странице (1251)
-F:\git\Programm\Game\include\PlayerForClient.cpp(114,25): warning C4566: символ, представленный универсальным именем символа "\u221E", невозможно представить в текущей кодовой странице (1251)
-F:\git\Programm\Game\include\PlayerForClient.cpp(32,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-F:\git\Programm\Game\include\PlayerForClient.cpp(32,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-F:\git\Programm\Game\include\PlayerForClient.cpp(105,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-F:\git\Programm\Game\include\CBullet.cpp(6,1): warning C4305: =: усечение из "double" в "float"
-F:\git\Programm\Game\include\CBullet.cpp(35,33): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+F:\Study\test2\test2\test2.cpp(56,1): warning C4305: =: усечение из "double" в "float"
+F:\Study\test2\test2\test2.cpp(87,33): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-F:\git\Programm\Game\include\CBullet.cpp(35,26): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+F:\Study\test2\test2\test2.cpp(87,26): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-F:\git\Programm\Game\test2.cpp(67,21): warning C4305: инициализация: усечение из "double" в "float"
-F:\git\Programm\Game\test2.cpp(136,15): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
-F:\git\Programm\Game\test2.cpp(148,23): warning C4305: =: усечение из "double" в "float"
-  Создание кода
-  7 of 2152 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    5 functions had inline decision re-evaluated but remain unchanged
-  Создание кода завершено
-  test2.vcxproj -> F:\git\Programm\Game\Release\test2.exe
+F:\Study\test2\test2\test2.cpp(159,35): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\Study\test2\test2\test2.cpp(160,26): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\Study\test2\test2\test2.cpp(176,35): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\Study\test2\test2\test2.cpp(177,26): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\Study\test2\test2\test2.cpp(196,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\Study\test2\test2\test2.cpp(211,21): warning C4018: <: несоответствие типов со знаком и без знака
+F:\Study\test2\test2\test2.cpp(239,1): warning C4305: =: усечение из "double" в "float"
+F:\Study\test2\test2\test2.cpp(244,1): warning C4305: =: усечение из "double" в "float"
+F:\Study\test2\test2\test2.cpp(249,1): warning C4305: =: усечение из "double" в "float"
+F:\Study\test2\test2\test2.cpp(266,26): warning C4305: инициализация: усечение из "double" в "float"
+F:\Study\test2\test2\test2.cpp(299,14): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+F:\Study\test2\test2\test2.cpp(307,71): warning C4305: =: усечение из "double" в "float"
+level.obj : error LNK2005: "public: void __thiscall Level::Draw(class sf::RenderWindow &)" (?Draw@Level@@QAEXAAVRenderWindow@sf@@@Z) уже определен в level.obj
+level.obj : error LNK2005: "public: class sf::Vector2<int> __thiscall Level::GetTileSize(void)" (?GetTileSize@Level@@QAE?AV?$Vector2@H@sf@@XZ) уже определен в level.obj
+level.obj : error LNK2005: "public: class std::vector<struct Object,class std::allocator<struct Object> > __thiscall Level::GetAllObjects(void)" (?GetAllObjects@Level@@QAE?AV?$vector@UObject@@V?$allocator@UObject@@@std@@@std@@XZ) уже определен в level.obj
+level.obj : error LNK2005: "public: class std::vector<struct Object,class std::allocator<struct Object> > __thiscall Level::GetObjects(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?GetObjects@Level@@QAE?AV?$vector@UObject@@V?$allocator@UObject@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z) уже определен в level.obj
+level.obj : error LNK2005: "public: struct Object __thiscall Level::GetObject(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?GetObject@Level@@QAE?AUObject@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) уже определен в level.obj
+level.obj : error LNK2005: "public: bool __thiscall Level::LoadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?LoadFromFile@Level@@QAE_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) уже определен в level.obj
+level.obj : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall Object::GetPropertyString(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?GetPropertyString@Object@@QAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V23@@Z) уже определен в level.obj
+level.obj : error LNK2005: "public: float __thiscall Object::GetPropertyFloat(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?GetPropertyFloat@Object@@QAEMV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) уже определен в level.obj
+level.obj : error LNK2005: "public: int __thiscall Object::GetPropertyInt(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?GetPropertyInt@Object@@QAEHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) уже определен в level.obj
+F:\Study\test2\test2\Release\test2.exe : fatal error LNK1169: обнаружен многократно определенный символ - один или более

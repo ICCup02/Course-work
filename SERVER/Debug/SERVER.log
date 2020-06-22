@@ -1,0 +1,3 @@
+﻿  SERVER.cpp
+F:\Study\test2\SERVER\include\CServer.cpp(134,23): warning C4018: >: несоответствие типов со знаком и без знака
+  SERVER.vcxproj -> F:\Study\test2\SERVER\Debug\SERVER.exe

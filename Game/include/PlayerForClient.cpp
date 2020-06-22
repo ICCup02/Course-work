@@ -23,8 +23,8 @@ public:
 	
 
 	PlayerForClient(Image& image, String name, Level lvl, float X, float Y, int W, int H, Text playertext) {
-		//МАКСИМАЛЬНЫЙ НИК 8 СИМВОЛОВ
-		x = X; y = Y; Width = W; Height = H;  //MoveTimer = 0;
+
+		x = X; y = Y; Width = W; Height = H;
 		Name = name; Direction = 1;
 		Health = 10;
 		this->texture.loadFromImage(image);
@@ -91,7 +91,7 @@ public:
 				sprite.setTextureRect(sf::IntRect(26 + 100 * int(frame_change(time, 4, 0.006)), 494, 70, 64));
 			}
 			if (Direction == LEFT) {
-				Width = -16; //if (OnGround==true)Dy = 0;
+				Width = -16; 
 				sprite.setTextureRect(sf::IntRect(2 + 100 * int(frame_change(time, 4, 0.006)), 398, 70, 64));
 			}
 			break;

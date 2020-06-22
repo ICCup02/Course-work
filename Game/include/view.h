@@ -5,7 +5,7 @@ using namespace sf;
 sf::View view;
 
 void setPlayerCoordinateForViewAndIcon(float& x, float& y, Sprite& Icon, Text& health, Text& clip, Text& nick, int factor) {
-	float tempXForView = x; float tempYForView = y;//считываем коорд игрока и проверяем их, чтобы убрать края
+	float tempXForView = x; float tempYForView = y;
 	if (x < 800) tempXForView = 800;//убираем из вида левую сторону
 	if (y < 400) tempYForView = 400;//верхнюю сторону
 	if (y > 680) tempYForView = 680;//нижнюю стороню.для новой карты
